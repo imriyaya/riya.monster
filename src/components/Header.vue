@@ -1,8 +1,8 @@
 <script lang="ts" setup>
 function clock(): string {
   const date = new Date();
-  const week = date.toLocaleString("default", { weekday: "long" });
-  const month = date.toLocaleString("default", { month: "long" });
+  const week = date.toLocaleString("us", { weekday: "long" }).substring(3, 0);
+  const month = date.toLocaleString("us", { month: "long" }).substring(3, 0);
   const day_of_month = date.getDate();
   const hours = (date.getHours().toString()).length>1? date.getHours() : "0"+date.getHours();
   const minutes = ((date.getMinutes().toString()).length>1? date.getMinutes() : "0"+date.getMinutes());
@@ -17,8 +17,6 @@ function clock(): string {
       <li><img alt="🖤" class="item favicon" draggable="false" src="https://twemoji.maxcdn.com/v/latest/72x72/1f5a4.png"/></li>
       <li><h1 class="item title">riya.monster</h1></li>
       <li><p class="item">File</p></li>
-      <li><p class="item">Edit</p></li>
-      <li><p class="item">Help</p></li>
 
       <ol class="icon-items">
         <li><p class="item clock" v-text="clock()"></p></li>
