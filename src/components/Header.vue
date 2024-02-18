@@ -1,8 +1,8 @@
 <script lang="ts" setup>
 function clock(): string {
   const date = new Date();
-  const week = date.toLocaleString("us", { weekday: "long" }).substring(3, 0);
-  const month = date.toLocaleString("us", { month: "long" }).substring(3, 0);
+  const week = date.toLocaleString("en-US", { weekday: "long" }).substring(3, 0);
+  const month = date.toLocaleString("en-US", { month: "long" }).substring(3, 0);
   const day_of_month = date.getDate();
   const hours = (date.getHours().toString()).length>1? date.getHours() : "0"+date.getHours();
   const minutes = ((date.getMinutes().toString()).length>1? date.getMinutes() : "0"+date.getMinutes());
