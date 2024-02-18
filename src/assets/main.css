@@ -1,0 +1,23 @@
+body {
+    overflow: hidden;
+}
+
+.background {
+    height: 150vh;
+    width: 150vw;
+    background: #edb9de;
+    background-image: radial-gradient(#f7e5f5 20%, transparent 0), radial-gradient(#f7e5f5 20%, transparent 0);
+    background-position: 0 0, 50px 50px;
+    background-size: 100px 100px;
+    animation: bg-loop 1s linear infinite;
+    position: absolute;
+}
+
+@keyframes bg-loop {
+    0% {
+        transform: translate(-100px, -100px);
+    }
+    to {
+        transform: translate(-50px, -50px);
+    }
+}
