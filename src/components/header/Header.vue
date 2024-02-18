@@ -1,14 +1,10 @@
-<script lang="ts" setup>
-function clock(): string {
-  const date = new Date();
-  const week = date.toLocaleString("en-US", { weekday: "long" }).substring(3, 0);
-  const month = date.toLocaleString("en-US", { month: "long" }).substring(3, 0);
-  const day_of_month = date.getDate();
-  const hours = (date.getHours().toString()).length>1? date.getHours() : "0"+date.getHours();
-  const minutes = ((date.getMinutes().toString()).length>1? date.getMinutes() : "0"+date.getMinutes());
-  const seconds = ((date.getSeconds().toString()).length>1? date.getSeconds() : "0"+date.getSeconds());
-  return (week + " " + month + " " + day_of_month + " " + hours + ":" + minutes + ":" + seconds);
-}
+<script lang="ts">
+import {defineComponent} from "vue";
+import Clock from "@/components/header/Clock.vue";
+
+export default defineComponent({
+  components: {Clock}
+})
 </script>
 
 <template>
@@ -19,7 +15,7 @@ function clock(): string {
       <li><p class="item">File</p></li>
 
       <ol class="icon-items">
-        <li><p class="item clock" v-text="clock()"></p></li>
+        <li><Clock class="item"/></li>
       </ol>
     </ol>
   </header>
