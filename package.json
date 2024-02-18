@@ -13,8 +13,7 @@
   "dependencies": {
     "bootstrap": "^5.3.2",
     "bootstrap-vue": "^2.23.1",
-    "vue": "^3.4.19",
-    "vue-js-modal": "^2.0.1"
+    "vue": "^3.4.19"
   },
   "devDependencies": {
     "@tsconfig/node20": "^20.1.2",
