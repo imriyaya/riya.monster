@@ -2,12 +2,10 @@
 </script>
 
 <template>
-  <div>
+  <div class="select-none">
     <NuxtLoadingIndicator/>
     <CommonHeader/>
-    <UContainer class="">
-      <slot/>
-    </UContainer>
+    <slot/>
     <CommonFooter/>
     <UNotifications/>
   </div>

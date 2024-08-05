@@ -4,13 +4,15 @@
 <template>
   <main>
     <UContainer class="h-[600px] flex">
+      <img class="absolute top-[49px] right-0 -z-20" src="/hero-gradient.svg" alt="hero-gradient"/>
+      <img class="absolute top-[49px] right-0 -z-20 lg:hidden" src="/hero-gradient-tablet.svg" alt="hero-gradient-tablet"/>
       <div class="my-auto w-auto lg:w-full">
         <h1 class="text-6xl font-bold backdrop-blur">
           What's up!<br/>
-          I'm <span class="text-primary backdrop-blur">riya</span>.
+          I'm <span class="text-primary">riya</span>.
         </h1>
         <p>
-          
+          Work in progress...
         </p>
       </div>
       <Diamond
@@ -20,5 +22,4 @@
 </template>
 
 <style scoped>
-
 </style>

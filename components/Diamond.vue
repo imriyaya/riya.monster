@@ -41,7 +41,7 @@ onMounted(async () => {
   diamond.scene.rotation.set(0, 0, 0.5);
   scene.add(diamond.scene);
 
-  const light1 = new THREE.DirectionalLight(0xce2ea8, 5);
+  const light1 = new THREE.DirectionalLight(0xc27ab1, 5);
   scene.add(light1);
   const light2 = new THREE.SpotLight(0x4140ff, 10);
   light2.position.set(0, 2, 2);
