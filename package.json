@@ -1,19 +1,43 @@
 {
-  "name": "nuxt-app",
+  "name": "vue-project",
+  "version": "0.0.0",
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "nuxt build",
-    "dev": "nuxt dev",
-    "generate": "nuxt generate",
-    "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "dev": "vite",
+    "build": "run-p type-check \"build-only {@}\" --",
+    "preview": "vite preview",
+    "build-only": "vite build",
+    "type-check": "vue-tsc --build"
   },
   "dependencies": {
-    "@nuxt/ui": "^2.18.3",
-    "@types/three": "^0.167.1",
-    "nuxt": "^3.12.4",
-    "three": "^0.167.1",
-    "vue": "latest"
+    "@types/three": "^0.171.0",
+    "@volar/language-core": "2.4.0-alpha.20",
+    "@volar/language-server": "2.4.0-alpha.20",
+    "@volar/language-service": "2.4.0-alpha.20",
+    "@volar/source-map": "2.4.0-alpha.20",
+    "@volar/typescript": "2.4.0-alpha.20",
+    "@vue/language-core": "2.0.29",
+    "@vue/language-server": "2.0.29",
+    "@vue/language-service": "2.0.29",
+    "@vue/typescript-plugin": "2.0.29",
+    "pinia": "^2.3.0",
+    "three": "^0.171.0",
+    "vue": "^3.5.13",
+    "vue-router": "^4.5.0"
+  },
+  "devDependencies": {
+    "@tsconfig/node22": "^22.0.0",
+    "@types/node": "^22.10.2",
+    "@vitejs/plugin-vue": "^5.2.1",
+    "@vue/tsconfig": "^0.7.0",
+    "autoprefixer": "^10.4.20",
+    "npm-run-all2": "^7.0.2",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.17",
+    "typescript": "~5.6.3",
+    "vite": "^6.0.5",
+    "vite-plugin-vue-devtools": "^7.6.8",
+    "vue-tsc": "^2.1.10"
   }
 }
