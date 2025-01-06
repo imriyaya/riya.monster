@@ -7,6 +7,10 @@ const router = createRouter({
       path: '/',
       component: () => import("../views/index.vue"),
     },
+    {
+      path: '/log',
+      component: () => import("../views/log.vue")
+    }
   ],
 })
 

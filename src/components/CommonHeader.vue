@@ -6,6 +6,10 @@ const pages: {title: string, path: string}[] = [
   {
     title: "Home",
     path: "/"
+  },
+  {
+    title: "Log",
+    path: "/log"
   }
 ]
 </script>
